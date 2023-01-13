@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    padding-top:70px;
+    padding-bottom:20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+header nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    width: 600px;
+    height: 70px;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration:none;
+    display: inline-block;
+    font-size: 20px;
+    /* background: cyan; */
+    padding:10px 20px;
+    color:black;
+}
+header nav ul li a:hover {
+    color:coral;
+}
+header .icon i{
+    padding-right: 15px;
+    font-size: 20px;
+}
+ .main {
+    /* padding-top:70px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .main .main-cont{
+    width:650px;
+    /* border:1px solid red; */
+    margin-left:120px;
+    padding-top:100px;
+}
+ .main .main-image {
+    padding-top:50px;
+    width:720px;
+    /* border:1px solid red; */
+}
+ .main .main-image img {
+    width:100%;
+}
+ .main-text  span {
+    font-family: mv boli;
+    color:#fac031;
+    font-weight: bolder;
+    /* font-size: 1.5em; */
+}
+ .main-text {
+    padding-top:60px;
+    padding-bottom: 30px;
+    font-size: 2.5em;
+}
+ .main-cont p {
+    text-align: justify;
+}
+ .main-cont .main-btn {
+    display:inline-block;
+    padding:10px 25px;
+    background: #fac031;
+    margin-top:130px;
+}
+ .main-cont .main-btn a {
+    text-decoration: none;
+    color:white;
+}
+ .main-cont .main-btn i {
+    color:white;
+}
+
+/* About     */
+
+.about-text {
+    width:40%;
+    padding-right: 20px;
+}
+.about-text p{
+    text-align: justify;
+}
+.about-main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center; 
+}
+.about-main .image {
+    width:60%;
+    /* border:1px solid blue; */
+}
+.about .image img {
+    width:100%;
+}
+.about-text h1 {
+    margin-bottom:120px;
+    font-size: 3em;
+}
+.about-text h3{
+    font-size: 2em;
+    margin-bottom:50px;
+} 
+.about-text .about-btn {
+    display:inline-block;
+    padding:10px 25px;
+    background: #fac031;
+    margin-top:130px;
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+}
+.about-text span {
+    font-family: mv boli;
+    color:#fac031;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+/* Menu */
+.menu {
+    padding-bottom: 20px;
+    /* border:1px solid blue; */
+}
+.menu h1 {
+    text-align: center;
+    font-size: 3em;
+    /* margin-top:50px; */
+    padding-bottom: 20px;
+}
+.menu h1 span {
+    font-family: mv boli;
+    color:#fac031;
+}
+.menu-card {
+    width:300px;
+    /* border:2px solid gray; */
+    box-shadow:inset 0 0 5px rgb(0 0 0 / 50%);
+    position:relative;
+    padding: 10px;
+    overflow:hidden;
+}
+.menu-card .menu-image img {
+    width:100%;
+    height:250px;
+    transition: 0.8s;
+}
+.menu-card .menu-info {
+    text-align: center;
+}
+.menu-card .menu-info h2 {
+    font-size: 25px;
+    color: #fac031;
+}
+.menu-card .menu-info .menu-icon {
+  color:#fac031;
+}
+.menu-card .menu-info .menu-btn {
+    display:inline-block;
+    padding:10px 25px;
+    background: black;
+    margin-top:10px;
+    text-decoration: none;
+    color:white;
+    /* font-size: 1.5em; */
+}
+.menu-card .menu-info .menu-btn:hover {
+    background: #fac031;
+    color:black;
+}
+.menu .menu-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    place-items: center;
+}
+.small-card i{
+    position: absolute;
+    top: 20px;
+    right:-50px;
+    font-size: 20px;
+    transition: 0.8s;
+}
+.menu-card .menu-image img:hover {
+    transform: scale(1.2);
+}
+.menu-card:hover .small-card i{
+    right:20px;
+    top:20px;
+    color:rgb(150, 80, 0);
+}
+
+/* Gallery */
+
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    grid-row-gap:10px;
+}
+.gallery-container .gallery-image {
+    width:400px;
+    border:1px solid blue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    overflow: hidden;
+}
+.gallery-container .gallery-image  img {
+    width:100%;
+}
+.gallery h1 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+.gallery h1 span {
+    font-family: mv boli;
+    color:#fac031;
+}
+.gallery-container .gallery-btn {
+    display:inline-block;
+    padding:10px 25px;
+    background: #fac031;
+    text-decoration: none;
+    margin-top:20px;
+}
+
+.gallery-image{
+    transition:0.8s;
+    position:relative;
+}
+.gallery-image .text {
+    width: 100%;
+    height: 100%;
+    color:white;
+    position: absolute;
+    top:-140px;
+    opacity:1;
+    transition: 1.2s;
+}
+.gallery-image .text h3 {
+    color:#fac031;
+    font-size: 2em;
+}
+
+.gallery-image:hover .text {
+    opacity:1;
+    top:0;
+    padding-top:120px;
+    background:rgba(0, 0, 0, 0.5);
+    
+}
+
+/* Review */
+.review {
+    padding-top:70px;
+}
+.review h1 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+.review h1 span {
+    font-family: mv boli;
+    color:#fac031;
+}
+.review .review-card {
+    width:300px;
+    padding-bottom: 10px;
+    box-shadow:inset 0px 0px 5px rgb(0 0 0 / 50%);
+    border-radius:20px;
+    text-align: center;
+}
+.review-card .review-text p{
+    padding:0 10px;
+    text-align: justify;
+}
+
+ .review-card .review-text .review-social {
+    margin:15px 0;
+    opacity:0;
+    transition: 1.2s;
+} 
+.review-card:hover .review-text .review-social{
+    object-position:center;
+    object-fit: cover;
+    opacity:1;
+}
+.review-card .review-text .review-icon {
+    color:#fac031;
+}
+.review-card .review-profile {
+    width:200px;
+    margin:10px auto;
+    border:5px solid lightgray;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+}
+
+ .review-card .review-profile img{
+    width:100%;
+    border-radius:50%;
+}
+.review-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Order */
+
+.order {
+    background: url(image/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.order h1 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+.order h1 span {
+    font-family: mv boli;
+    color:#fac031;
+}
+.order-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+.form-box {
+    width:800px;
+    display: flex;
+    /* border:1px solid blue; */
+    justify-content: center;
+    gap:50px;
+}
+.order .order-image {
+    width:500px;
+}
+.order .order-image img {
+    width:100%;
+}
+.input {
+    display:inline-block;
+    width:360px;
+    padding-bottom:15px;
+}
+.input input[type]{
+    width:360px;
+    padding:5px;
+    border:3px solid #ccc;
+    background: #eee;
+}
+.input input:focus {
+    outline-color:#fac031;
+}
+.order .order-btn {
+    display:inline-block;
+    padding:10px 25px;
+    background: #fac031;
+    margin-top:30px;
+    text-decoration: none;
+    color:white;
+}
+
+/* Team  */
+.team {
+    background: url(./image/bg1.jpg);
+    max-height: 100vh;
+    margin-bottom: 50px;
+}
+.team-box {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.profile {
+    border:4px solid #eee;
+    width:320px;
+    height: 320px;
+    text-align: center;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile:hover .info {
+    border-radius:20px;
+    display:block;
+    margin-bottom:80px;
+}
+
+ .profile-pic{
+    width:250px;
+    height:250px;
+    border:4px solid #eee;
+    border-radius:50%;
+ } 
+ .profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+ }
+ .team  .info {
+    display:none;
+    width:250px;
+    margin:0px 30px;
+ }
+ .team h1 {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+.team h1 span {
+    font-family: mv boli;
+    color:#fac031;
+}
+.team .info h2 {
+    color:#fac031;
+    font-size: 2em;
+}
+
+.team .team-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+/* Footer  */
+footer {
+    margin-top:100px;
+    background: #eee;
+}
+.footer-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-tag h2{
+  margin-top:10px;
+  margin-bottom:20px;
+}
+.footer-tag p {
+    margin-bottom:10px;
+}
+.footer-tag p a {
+    color:black;
+    text-decoration: none;
+}
+footer .end {
+    /* background: #eee; */
+    text-align: center;
+    font-size: 20px;
+    padding:6px;
+}
+footer .end span {
+    color:#fac031;
+    /* font-size:1.2em; */
+}
